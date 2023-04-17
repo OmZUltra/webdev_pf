@@ -1,0 +1,271 @@
+/* Header */
+header {
+    height: 100vh;
+    background-image: url('../media/fleet-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.contact_strip {
+    background-color: #0b0f4d;
+    color: white;
+    font-size: 0.77rem;
+    font-style: italic;
+}
+
+.contact_strip .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 15rem;
+}
+
+.contact_strip ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_strip ul li {
+    padding: 0 0.7rem;
+}
+
+.socials a {
+    color: white;
+}
+
+.socials a:hover {
+    color: rgba(216,67,21,255);
+}
+
+.active {
+    color: rgba(216,67,21,255);
+}
+
+.main_contact i {
+    padding-right: 0.3rem;
+    color: rgba(216,67,21,255);
+}
+
+.main_contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.main_contact span:hover, a:hover {
+    color: rgba(216,67,21,255);
+    cursor: pointer;
+}
+
+#hidden_nav {
+    position: fixed;
+    width: 100%;
+    top: -5rem;
+    z-index: 10;
+}
+
+.nav_strip {
+    background-color: white;
+    border-bottom: 1px solid #0b0f4d;
+    transition: top 0.4s ease-out;
+}
+
+.nav_strip nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 15rem;
+}
+
+.logo_container {
+    width: 10rem;
+}
+
+.logo_container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navigation {
+    width: 30rem;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a {
+    padding: 1rem;
+}
+
+.greeting_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.greeting_area h2 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.highlight {
+    color: #FD6E2B;
+}
+
+.button {
+    display: block;
+    padding: 1rem 2rem;
+    background-color: #0b0f4d;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+}
+
+.button:hover {
+    color: #0b0f4d;
+    background-color: white;
+    transition: all 1s;
+}
+
+.button:active {
+    position: relative;
+    top: 2px;
+    padding: 0.9rem 1.9rem;
+}
+/* Header */
+
+/* Footer */
+footer {
+    background-color: #0b0f4d;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-top: 1px solid white;
+}
+
+footer .container {
+    padding: 5rem 15rem;
+}
+
+.footer_row1 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.row_content {
+    width: 20rem;
+    text-align: justify;
+}
+
+.row_content h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5rem;
+}
+
+.footer_nav i {
+    font-size: 1.3rem;
+    padding: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer_nav span {
+    display: inline-block;
+}
+
+.location_time {
+    height: 8rem;
+}
+
+.location_time :first-child {
+    padding-bottom: 1rem;
+}
+
+.footer_socials {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+}
+
+footer ul a {
+    color: white;
+}
+
+.footer_row2 {
+    text-align: center;
+}
+
+.footer_row2 span {
+    color: rgba(216,67,21,255);
+}
+/* Footer */
+
+/* Header (For pages other than home) */
+.page_header {
+    height: 40vh;
+}
+
+.header_title {
+    padding: 0 20rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0b0f4dAA;
+}
+
+.title_box {
+    display: flex;
+}
+
+.title {
+    width: 12rem;
+    height: 12rem;
+    background-color: #0b0f4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Secular One', sans-serif;
+    font-size: 2rem;
+}
+
+.title_desc {
+    background-color: white;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title_desc p {
+    padding: 2rem;
+    font-size: 1rem;
+    text-transform: none;
+}
+/* Header (For pages other than home) */
