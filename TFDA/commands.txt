@@ -1,0 +1,2 @@
+cd C:\Users\orume\OneDrive\Documents\"Work Files"\TFDA
+sass --watch style.scss style.css

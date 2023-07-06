@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.image, .content {
+    width: 50%;
+    height: 100%;
+}
+
+.image {
+    background-image: url("../media/img/thankyou.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .content-container {
+        padding: 2rem;
+    }
+
+    .logo-container {
+        padding-bottom: 3rem;
+    }
+
+    h2 {
+        font: 700 4rem 'Josefin Sans', sans-serif;
+    }
+
+    p {
+        font:  2rem 'Josefin Slab', serif;
+    }
+
+    a {
+        color: green;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}

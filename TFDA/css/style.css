@@ -1,0 +1,379 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(41, 62, 49);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+header .logo-container {
+  border-radius: 0 10rem 10rem 0;
+}
+header nav.navigation {
+  width: 50rem;
+  display: flex;
+  align-items: center;
+}
+header nav.navigation li {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  flex-shrink: 0;
+}
+header nav.navigation li a {
+  padding: 2rem;
+  font: 1.5rem "Josefin Sans", sans-serif;
+}
+header nav.navigation li a:active {
+  font-size: 1.4rem;
+}
+header .socials {
+  margin-right: 4rem;
+}
+header a {
+  color: rgb(255, 253, 251);
+}
+header a:hover {
+  color: rgb(96, 139, 119);
+}
+
+/* /header */
+.logo-container {
+  width: 40rem;
+  background-color: rgb(255, 253, 251);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10rem 10rem 0;
+}
+.logo-container .link-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container .link-container #logo-cage {
+  display: inline-block;
+  width: 70px;
+}
+.logo-container .link-container img {
+  max-width: 100%;
+}
+.logo-container .link-container #c_name {
+  font: bold 2rem "Josefin Sans", sans-serif;
+  color: rgb(96, 139, 119);
+  width: 25rem;
+  padding-left: 0.4rem;
+}
+
+.socials {
+  width: 10rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.socials li {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.212);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* main area */
+#intro-banner {
+  height: calc(100vh - 12rem);
+  background-image: url("../media/img/intro-banner(lower).jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 253, 251);
+  font-family: "Josefin Sans", sans-serif;
+}
+#intro-banner .container {
+  /*border: 1px solid $bg_white;*/
+  width: 100rem;
+  text-align: center;
+  z-index: 1;
+  padding: 0;
+}
+#intro-banner .container h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+#intro-banner .container h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  position: relative;
+  padding: 1rem 0;
+}
+#intro-banner .container h1::before {
+  content: "";
+  border: 1px solid rgb(255, 253, 251);
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  right: 10rem;
+}
+#intro-banner .container h1::after {
+  content: "";
+  border: 1px solid rgb(255, 253, 251);
+  position: absolute;
+  bottom: 0;
+  left: 10rem;
+  right: 10rem;
+}
+
+section {
+  position: relative;
+}
+section .container {
+  padding: 8rem;
+  position: relative;
+  z-index: 2;
+}
+section .container .title-container {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+section .container .title-container h2 {
+  font: 700 5rem "Josefin Sans", sans-serif;
+  padding-bottom: 1rem;
+}
+section .container .title-container p {
+  font: 1.4rem "Josefin Sans", sans-serif;
+  width: 25rem;
+  margin: 0 auto;
+}
+
+#services {
+  background-image: url("../media/img/srv-banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#services .content-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 30rem);
+  column-gap: 5rem;
+  justify-content: center;
+}
+#services .content-container .service-card {
+  text-align: center;
+}
+#services .content-container .service-card .image-container {
+  width: 25rem;
+  height: 25rem;
+  margin: 2rem auto;
+}
+#services .content-container .service-card .image-container img {
+  max-width: 100%;
+}
+#services .content-container .service-card h3 {
+  padding: 2rem 0;
+  font: 700 1.8rem "Josefin Sans", sans-serif;
+}
+#services .content-container .service-card p {
+  font: 1.5rem "Josefin Sans", sans-serif;
+  padding: 0 2rem 1rem 2rem;
+}
+
+#about .story-container {
+  width: 160rem;
+  height: 80rem;
+  margin: 0 auto;
+  display: flex;
+}
+#about .story-container .story {
+  width: 50%;
+  background-color: rgb(96, 139, 119);
+  color: rgb(255, 253, 251);
+  display: flex;
+  align-items: center;
+}
+#about .story-container .story .story-inner {
+  margin: 0 auto;
+  width: 50rem;
+}
+#about .story-container .story h3 {
+  font: 700 4rem "Josefin Sans", sans-serif;
+  margin-bottom: 3rem;
+  position: relative;
+}
+#about .story-container .story h3::after {
+  content: "";
+  border: 1px solid rgb(255, 253, 251);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 9rem;
+}
+#about .story-container .story p {
+  font: 2rem "Josefin Slab", serif;
+  text-align: justify;
+}
+#about .story-container .image-container {
+  width: 50%;
+}
+#about .story-container .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.mission {
+  font: 2rem "Josefin Slab", serif;
+  text-align: center;
+  margin: 10rem 0;
+  color: rgb(41, 62, 49);
+}
+.mission img {
+  margin-bottom: 3rem;
+}
+.mission h3 {
+  font: 700 4rem "Josefin Sans", sans-serif;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 3rem auto;
+}
+.mission h3::after {
+  content: "";
+  border: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 9rem;
+}
+.mission p {
+  max-width: 100rem;
+  min-width: 50rem;
+  margin: 0 auto;
+}
+
+#contact {
+  background-image: url("../media/img/contact-banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#contact .overlay {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+#contact form {
+  width: 60rem;
+  height: fit-content;
+  margin: 0 auto;
+}
+#contact form input, #contact form textarea {
+  margin: 5rem auto;
+  display: block;
+  border: none;
+  border-bottom: 2px solid rgb(41, 62, 49);
+  width: 50rem;
+  font: 1.8rem "Josefin Sans", sans-serif;
+  background-color: transparent;
+}
+#contact form input:focus, #contact form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(96, 139, 119);
+  color: rgb(96, 139, 119);
+}
+#contact form textarea {
+  resize: none;
+  height: 15rem;
+  border: 2px solid rgb(41, 62, 49);
+}
+#contact form .submit {
+  width: fit-content;
+  padding: 2rem;
+  color: rgb(255, 253, 251);
+  background-color: rgb(41, 62, 49);
+  cursor: pointer;
+  border-radius: 3rem;
+}
+#contact form .submit:hover {
+  background-color: rgb(96, 139, 119);
+}
+#contact form .submit:active {
+  color: rgb(255, 253, 251);
+}
+#contact .contact-details {
+  font: 2rem "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(41, 62, 49);
+  color: rgb(255, 253, 251);
+  width: fit-content;
+  padding: 3rem;
+  border-radius: 3rem;
+  margin: 0 auto;
+}
+#contact .contact-details p {
+  width: fit-content;
+  padding: 0 3rem;
+}
+#contact .contact-details .divider {
+  background-color: rgb(255, 253, 251);
+  width: 1px;
+}
+#contact iframe {
+  max-width: 100%;
+  padding: 5rem 0 0 0;
+}
+
+/* /main area */
+/* footer */
+footer {
+  background-color: rgb(41, 62, 49);
+  color: rgb(255, 253, 251);
+  font-family: "Josefin Sans", sans-serif;
+}
+footer .logo-container {
+  border-radius: 4rem;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+footer .footer-item h2 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+}
+footer .footer-item p {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+footer .useful-links a {
+  font-size: 1.5rem;
+}
+footer .socials {
+  margin: 0 auto;
+}
+footer a {
+  color: rgb(255, 253, 251);
+}
+footer a:hover {
+  color: rgb(96, 139, 119);
+}
+footer #credits-page {
+  text-decoration: underline;
+}
+
+/* /footer */
+
+/*# sourceMappingURL=style.css.map */
